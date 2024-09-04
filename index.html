@@ -85,33 +85,31 @@
       type="image/x-icon"
       sizes="48x48"
     />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WR8TDBW4");
-    </script>
-    <!-- End Google Tag Manager -->
+   <!-- Google Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P67G03FM6X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // Basic Google Analytics configuration
+    gtag('config', 'G-P67G03FM6X');
+
+    // Anonymize IP Address
+    gtag('config', 'G-P67G03FM6X', { 'anonymize_ip': true });
+
+    // Example of tracking site functionality (e.g., button click)
+    function trackButtonClick() {
+      gtag('event', 'click', {
+        'event_category': 'site_functionality',
+        'event_label': 'button_click',
+        'value': 1
+      });
+    }
+  </script>
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WR8TDBW4"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- navigation -->
     <section class="fixed-top navigation">
       <div class="container">
@@ -177,10 +175,7 @@
               Strategien und Lösungen für nachhaltigen Erfolg im digitalen
               Zeitalter
             </p>
-            <a
-              href="/about.html"
-              class="btn btn-secondary btn-lg"
-              onclick="trackButtonClick()"
+            <a href="/about.html" class="btn btn-secondary btn-lg" onclick="trackButtonClick()"
               >Jetzt entdecken</a
             >
             <!-- banner image -->
