@@ -606,19 +606,23 @@
             <p class="mb-5">Erhalten Sie Updates, Neuigkeiten und Angebote</p>
           </div>
           <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-            <form action="#">
+            <form id="newsletter-form" action="#">
               <div class="input-wrapper position-relative">
-                <input
-                  type="email"
-                  class="newsletter-form"
-                  id="newsletter"
-                  placeholder="Geben Sie Ihre E-Mail ein"
-                />
-                <button type="submit" value="send" class="btn newsletter-btn">
-                  Abonnieren
-                </button>
+                  <input
+                      type="email"
+                      class="newsletter-form"
+                      id="newsletter"
+                      name="email"
+                      placeholder="Geben Sie Ihre E-Mail ein"
+                      required
+                  />
+                  <button type="submit" value="send" class="btn newsletter-btn">
+                      Abonnieren
+                  </button>
               </div>
-            </form>
+              <div id="response-message"></div>
+          </form>
+          
           </div>
         </div>
       </div>
@@ -746,6 +750,36 @@
     <!-- aos -->
     <script src="plugins/aos/aos.js"></script>
     <!-- Main Script -->
+    <script>
+      document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          const formData = new FormData(this);
+      
+          fetch('subscribe.php', {
+              method: 'POST',
+              body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+              const responseMessage = document.getElementById('response-message');
+              if (data.success) {
+                  responseMessage.textContent = data.message;
+                  responseMessage.style.color = 'green';
+                  document.getElementById('newsletter-form').reset(); // Reset the form fields
+              } else {
+                  responseMessage.textContent = data.message;
+                  responseMessage.style.color = 'red';
+              }
+          })
+          .catch(error => {
+              console.error('Error:', error);
+              document.getElementById('response-message').textContent = 'An error occurred.';
+              document.getElementById('response-message').style.color = 'red';
+          });
+      });
+      </script>
+      
     <script src="js/script.js"></script>
   </body>
 </html>
