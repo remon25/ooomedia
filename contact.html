@@ -30,7 +30,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ooomedia.de/contact.html" />
-    <meta property="og:image" content="https://ooomedia.de/images/logo-og.jpg" />
+    <meta
+      property="og:image"
+      content="https://ooomedia.de/images/logo-og.jpg"
+    />
     <meta property="og:locale" content="de_DE" />
 
     <!-- Twitter Card Meta Tags -->
@@ -41,7 +44,10 @@
       content="Kontaktieren Sie ooo Media, die führende Agentur im Online-Marketing. Wir stehen Ihnen für Fragen, Beratungen und individuelle Lösungen zur Verfügung. Lassen Sie uns gemeinsam Ihre Marke stärken und Ihre Ziele erreichen."
     />
 
-    <meta name="twitter:image" content="https://ooomedia.de/images/logo-og.jpg" />
+    <meta
+      name="twitter:image"
+      content="https://ooomedia.de/images/logo-og.jpg"
+    />
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://www.ooomedia.de/contact.html" />
@@ -74,28 +80,33 @@
       sizes="48x48"
     />
     <!-- Google tag (gtag.js) -->
-<!-- Google Tag -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P67G03FM6X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Tag -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P67G03FM6X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  // Basic Google Analytics configuration
-  gtag('config', 'G-P67G03FM6X');
+      // Basic Google Analytics configuration
+      gtag("config", "G-P67G03FM6X");
 
-  // Anonymize IP Address
-  gtag('config', 'G-P67G03FM6X', { 'anonymize_ip': true });
+      // Anonymize IP Address
+      gtag("config", "G-P67G03FM6X", { anonymize_ip: true });
 
-  // Example of tracking site functionality (e.g., button click)
-  function trackButtonClick() {
-    gtag('event', 'click', {
-      'event_category': 'site_functionality',
-      'event_label': 'form_submit',
-      'value': 1
-    });
-  }
-</script>
+      // Example of tracking site functionality (e.g., button click)
+      function trackButtonClick() {
+        gtag("event", "click", {
+          event_category: "site_functionality",
+          event_label: "form_submit",
+          value: 1,
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -146,7 +157,7 @@
     <!-- /navigation -->
 
     <!-- contact -->
-    <section class="section-lg contact" style="padding-bottom: 0;">
+    <section class="section-lg contact" style="padding-bottom: 0">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -157,42 +168,41 @@
           <div class="col-lg-7 mb-4 mb-lg-0">
             <form id="contact-form">
               <input
-                  type="text"
-                  class="form-control mb-3"
-                  id="name"
-                  name="name"
-                  placeholder="Ihr Name"
-                  required
+                type="text"
+                class="form-control mb-3"
+                id="name"
+                name="name"
+                placeholder="Ihr Name"
+                required
               />
               <input
-                  type="email"
-                  class="form-control mb-3"
-                  id="mail"
-                  name="mail"
-                  placeholder="Ihre E-Mail-Adresse"
-                  required
+                type="email"
+                class="form-control mb-3"
+                id="mail"
+                name="mail"
+                placeholder="Ihre E-Mail-Adresse"
+                required
               />
               <input
-                  type="text"
-                  class="form-control mb-3"
-                  id="subject"
-                  name="subject"
-                  placeholder="Betreff"
-                  required
+                type="text"
+                class="form-control mb-3"
+                id="subject"
+                name="subject"
+                placeholder="Betreff"
+                required
               />
               <textarea
-                  name="message"
-                  id="message"
-                  class="form-control mb-3"
-                  placeholder="Ihre Nachricht"
-                  required
+                name="message"
+                id="message"
+                class="form-control mb-3"
+                placeholder="Ihre Nachricht"
+                required
               ></textarea>
               <button type="submit" class="btn btn-secondary">
-                  NACHRICHT SENDEN
+                NACHRICHT SENDEN
               </button>
               <div id="response-message"></div>
-          </form>
-          
+            </form>
           </div>
           <div class="col-lg-5">
             <p class="mb-5">
@@ -241,24 +251,23 @@
 
     <!-- /contact -->
 
-  
-   <!-- footer -->
-   <footer
-   class="footer-section footer"
-   style="background-image: url(images/backgrounds/footer-bg.svg)"
- >
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-         <!-- logo -->
-         <a href="index.html">
-           <img src="/images/OOO-cropped.svg" alt="o media brand logo" />
-         </a>
-       </div>
-       <!-- footer menu -->
-       <nav class="col-lg-8 align-self-center mb-5">
-         <ul class="list-inline text-lg-right text-center footer-menu">
-           <!-- <li class="list-inline-item">
+    <!-- footer -->
+    <footer
+      class="footer-section footer"
+      style="background-image: url(images/backgrounds/footer-bg.svg)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+            <!-- logo -->
+            <a href="index.html">
+              <img src="/images/OOO-cropped.svg" alt="o media brand logo" />
+            </a>
+          </div>
+          <!-- footer menu -->
+          <nav class="col-lg-8 align-self-center mb-5">
+            <ul class="list-inline text-lg-right text-center footer-menu">
+              <!-- <li class="list-inline-item">
              <a
                class="page-scroll d-flex align-items-baseline"
                href="tel:+963959965182"
@@ -267,83 +276,83 @@
                <p>+963 959 965 182</p>
              </a>
            </li> -->
-           <li class="list-inline-item">
-             <a
-               href="mailto:example@example.com"
-               class="d-flex align-items-baseline"
-             >
-               <i class="ti-email mr-2"></i>
-               <p>info@ooomedia.de</p></a
-             >
-           </li>
-         </ul>
-         <ul class="list-inline text-lg-right text-center footer-menu">
-           <li class="list-inline-item">
-             <a class="page-scroll" href="/#feature">Dienstleistungen</a>
-           </li>
-           <li class="list-inline-item">
-             <a href="about.html">Über uns</a>
-           </li>
-           <li class="list-inline-item">
-             <a href="contact.html">Beratung</a>
-           </li>
-           <li class="list-inline-item">
-             <a href="portfolio/index.html">portfolio</a>
-           </li>
-           <li class="list-inline-item">
-             <a href="contact.html">Kontakt</a>
-           </li>
-         </ul>
-       </nav>
+              <li class="list-inline-item">
+                <a
+                  href="mailto:example@example.com"
+                  class="d-flex align-items-baseline"
+                >
+                  <i class="ti-email mr-2"></i>
+                  <p>info@ooomedia.de</p></a
+                >
+              </li>
+            </ul>
+            <ul class="list-inline text-lg-right text-center footer-menu">
+              <li class="list-inline-item">
+                <a class="page-scroll" href="/#feature">Dienstleistungen</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="about.html">Über uns</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="contact.html">Beratung</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="portfolio/index.html">portfolio</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
 
-       <!-- footer social icon -->
-       <nav class="col-12">
-         <ul class="list-inline text-lg-right text-center social-icon">
-           <li class="list-inline-item">
-             <a
-               class="facebook"
-               href="https://www.facebook.com/people/ooo-media/61565371772226/?notif_id=1725489793395079&notif_t=profile_plus_admin_invite&ref=notif"
-               ><i class="ti-facebook"></i
-             ></a>
-           </li>
-           <li class="list-inline-item">
-             <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
-           </li>
-           <li class="list-inline-item">
-             <a class="insta" href="#"><i class="ti-instagram"></i></a>
-           </li>
-           <li class="list-inline-item">
-             <a class="insta" href="#">
-               <svg
-                 fill="#000000"
-                 width="17px"
-                 height="17px"
-                 viewBox="0 0 512 512"
-                 id="icons"
-                 xmlns="http://www.w3.org/2000/svg"
-               >
-                 <path
-                   d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"
-                 />
-               </svg>
-             </a>
-           </li>
-         </ul>
-       </nav>
-     </div>
-     <div class="impress mt-5">
-       <div class="copyright d-flex justify-content-center">
-         <p>Copyright &copy; 2024. All rights reserved.</p>
-       </div>
-       <div class="d-flex justify-content-center">
-         <a href="/impressum.html" target="_blank">Impressum</a> &nbsp;
-         &mdash; &nbsp;
-         <a href="/datenschutz.html" target="_blank">Datenschutz</a>
-       </div>
-     </div>
-   </div>
- </footer>
- <!-- /footer -->
+          <!-- footer social icon -->
+          <nav class="col-12">
+            <ul class="list-inline text-lg-right text-center social-icon">
+              <li class="list-inline-item">
+                <a
+                  class="facebook"
+                  href="https://www.facebook.com/people/ooo-media/61565371772226/?notif_id=1725489793395079&notif_t=profile_plus_admin_invite&ref=notif"
+                  ><i class="ti-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="insta" href="#"><i class="ti-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="insta" href="#">
+                  <svg
+                    fill="#000000"
+                    width="17px"
+                    height="17px"
+                    viewBox="0 0 512 512"
+                    id="icons"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="impress mt-5">
+          <div class="copyright d-flex justify-content-center">
+            <p>Copyright &copy; 2024. All rights reserved.</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="/impressum.html" target="_blank">Impressum</a> &nbsp;
+            &mdash; &nbsp;
+            <a href="/datenschutz.html" target="_blank">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
 
     <!-- jQuery -->
     <script src="plugins/jQuery/jquery.min.js"></script>
@@ -357,31 +366,35 @@
     <script src="plugins/aos/aos.js"></script>
     <!-- Main Script -->
     <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
           event.preventDefault(); // Prevent the default form submission
-      
+
           const formData = new FormData(this);
-          
-          fetch('send-email.php', {
-              method: 'POST',
-              body: formData
+
+          fetch("send-email.php", {
+            method: "POST",
+            body: formData,
           })
-          .then(response => response.json())
-          .then(data => {
-              const responseMessage = document.getElementById('response-message');
+            .then((response) => response.json())
+            .then((data) => {
+              const responseMessage =
+                document.getElementById("response-message");
               if (data.success) {
-                  responseMessage.textContent = data.message;
-                  responseMessage.style.color = 'green';
+                responseMessage.textContent = data.message;
+                responseMessage.style.color = "green";
+                this.reset(); 
               } else {
-                  responseMessage.textContent = data.message;
-                  responseMessage.style.color = 'red';
+                responseMessage.textContent = data.message;
+                responseMessage.style.color = "red";
               }
-          })
-          .catch(error => {
-              console.error('Error:', error);
-          });
-      });
-      </script>
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
