@@ -16,12 +16,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         if (mail($to, $subject, $message, $headers)) {
             $response['success'] = true;
-            $response['message'] = 'Subscription successful.';
+            $response['message'] = 'تم الاشتراك بنجاح.';
         } else {
-            $response['message'] = 'Failed to send email.';
+            $response['message'] = 'فشل في الارسال.';
         }
     } else {
-        $response['message'] = 'Invalid email address.';
+        $response['message'] = 'البريد الإلكتروني غير صالح.';
     }
 }
 
