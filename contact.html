@@ -155,38 +155,43 @@
         </div>
         <div class="row contact-bg p-2 rounded mb-5">
           <div class="col-lg-7 mb-4 mb-lg-0">
-            <form action="#">
+            <form action="send-email.php" method="POST">
               <input
-                type="text"
-                class="form-control mb-3"
-                id="name"
-                name="name"
-                placeholder="Ihr Name"
+                  type="text"
+                  class="form-control mb-3"
+                  id="name"
+                  name="name"
+                  placeholder="Ihr Name"
+                  required
               />
               <input
-                type="email"
-                class="form-control mb-3"
-                id="mail"
-                name="mail"
-                placeholder="Ihre E-Mail-Adresse"
+                  type="email"
+                  class="form-control mb-3"
+                  id="mail"
+                  name="mail"
+                  placeholder="Ihre E-Mail-Adresse"
+                  required
               />
               <input
-                type="text"
-                class="form-control mb-3"
-                id="subject"
-                name="subject"
-                placeholder="Betreff"
+                  type="text"
+                  class="form-control mb-3"
+                  id="subject"
+                  name="subject"
+                  placeholder="Betreff"
+                  required
               />
               <textarea
-                name="message"
-                id="message"
-                class="form-control mb-3"
-                placeholder="Ihre Nachricht"
+                  name="message"
+                  id="message"
+                  class="form-control mb-3"
+                  placeholder="Ihre Nachricht"
+                  required
               ></textarea>
-              <button type="submit" value="send" class="btn btn-secondary" onclick="trackButtonClick()">
-                NACHRICHT SENDEN
+              <button type="submit" class="btn btn-secondary">
+                  NACHRICHT SENDEN
               </button>
-            </form>
+          </form>
+          
           </div>
           <div class="col-lg-5">
             <p class="mb-5">
