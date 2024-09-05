@@ -445,6 +445,10 @@ section:not(.hero) {
     padding-bottom: 20px;
     background-color: #fff;
   }
+  .navbar-collapse ul{
+    padding-inline: 0;
+    padding-top: 20px;
+  }
 }
 
 .nav-bg {
