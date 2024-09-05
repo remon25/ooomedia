@@ -1113,6 +1113,9 @@ section:not(.hero) {
   line-height: 45px;
   display: block;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .client-logo-slider img {
