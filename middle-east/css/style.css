@@ -1481,5 +1481,8 @@ section.feature .row .d-flex {
 .newsletter-form{
   border: 1px solid #e3e1e1;
 }
+footer ul {
+  padding-inline-start: 0;
+}
 
 /*# sourceMappingURL=maps/style.css.map */
