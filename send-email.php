@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $to = 'remoomakram1@gmail.com';
+    $to = 'Wesam.Mardini@ooomedia.de';
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-type: text/html\r\n";
