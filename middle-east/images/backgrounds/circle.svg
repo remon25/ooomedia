@@ -1,0 +1,62 @@
+
+<svg viewBox="-52 -52 104 104" xmlns="http://www.w3.org/2000/svg">
+    
+   <!-- radius (r) of outer circle is 50, center is (0,0) -->
+   <style>
+      circle, text { fill: #9bc }
+
+      text { font-family: system-ui; }
+   </style>
+   
+   <!-- basic shape -->
+   <defs>
+      <circle r="2" id="dot"/>
+   </defs>
+   
+   <!-- x = r * sin(-90),  y = r * cos(-90)  -->
+   <use xlink:href="#dot"  x="-50" y="0" />
+   
+   <!-- x = r * sin(-78),  y = r * cos(-78)  -->
+   <use xlink:href="#dot"  x="-48.907" y="-10.39" />
+   
+   <!-- x = r * sin(-66),  y = r * cos(-66)  -->
+   <use xlink:href="#dot"  x="-45.677" y="-20.33" />
+   
+   
+   <!-- continue by increasing the angle of 12° for
+        the remaining 27 points, up to 270°
+     -->
+
+   <use xlink:href="#dot" x="-40.451" y="-29.389" />
+   <use xlink:href="#dot" x="-33.457" y="-37.157" />
+   <use xlink:href="#dot" x="-25.000" y="-43.301" />
+   <use xlink:href="#dot" x="-15.451" y="-47.553" />
+   <use xlink:href="#dot" x="-5.226" y="-49.726" />
+   <use xlink:href="#dot" x="5.226" y="-49.726" />
+   <use xlink:href="#dot" x="15.451" y="-47.553" />
+   <use xlink:href="#dot" x="25.000" y="-43.301" />
+   <use xlink:href="#dot" x="33.457" y="-37.157" />
+   <use xlink:href="#dot" x="40.451" y="-29.389" />
+   <use xlink:href="#dot" x="45.677" y="-20.337" />
+   <use xlink:href="#dot" x="48.907" y="-10.396" />
+   <use xlink:href="#dot" x="50.000" y="0" />
+   <use xlink:href="#dot" x="48.907" y="10.396" />
+   <use xlink:href="#dot" x="45.677" y="20.337" />
+   <use xlink:href="#dot" x="40.451" y="29.389" />
+   <use xlink:href="#dot" x="33.457" y="37.157" />
+   <use xlink:href="#dot" x="25.000" y="43.301" />
+   <use xlink:href="#dot" x="15.451" y="47.553" />
+   <use xlink:href="#dot" x="5.226" y="49.726" />
+   <use xlink:href="#dot" x="-5.226" y="49.726" />
+   <use xlink:href="#dot" x="-15.451" y="47.553" />
+   <use xlink:href="#dot" x="-25.000" y="43.301" />
+   <use xlink:href="#dot" x="-33.457" y="37.157" />
+   <use xlink:href="#dot" x="-40.451" y="29.389" />
+   <use xlink:href="#dot" x="-45.677" y="20.337" />
+   <use xlink:href="#dot" x="-48.907" y="10.396" />
+
+
+   <text text-anchor="middle" alignment-baseline="middle" 
+         x="0" y="0">12:34</text>
+
+</svg>

@@ -1,22 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Tajawal:300,400,500,600,700");
 body {
   line-height: 31px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
 }
-html[lang="de"] * {
-  hyphens: auto;
+html[lang="ar"] {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
 }
 
 p,
 .paragraph {
-  font-weight: 300;
+  font-weight: 500;
   color: #4d546f;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 31px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 h1,
@@ -32,34 +33,39 @@ h6,
 .h5,
 .h6 {
   color: #091337;
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", sans-serif;
   font-weight: 600;
   line-height: 1.5;
 }
 
 h1,
 .h1 {
-  font-size: 56px;
+  font-size: 58px;
+  direction: rtl;
 }
 
 h2,
 .h2 {
-  font-size: 43px;
+  font-size: 45px;
+  direction: rtl;
 }
 
 h3,
 .h3 {
   font-size: 37px;
+  direction: rtl;
 }
 
 h4,
 .h4 {
   font-size: 22px;
+  direction: rtl;
 }
 
 h5,
 .h5 {
   font-size: 16px;
+  direction: rtl;
 }
 
 h6,
@@ -69,7 +75,7 @@ h6,
 
 .btn {
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", sans-serif;
   text-transform: capitalize;
   padding: 15px 30px;
   font-weight: 400;
@@ -420,6 +426,7 @@ section:not(.hero) {
 
 .navbar-light .navbar-nav .nav-link {
   color: #091337;
+  font-weight: 500;
 }
 
 .navigation {
@@ -1040,8 +1047,8 @@ section:not(.hero) {
   height: 100%;
   background: #7164f2;
   top: 0;
-  right: 0;
-  border-radius: 0 5px 5px 0;
+  left: 0;
+  border-radius: 5px 0px 0px 5px;
   font-weight: 700;
   font-size: 18px;
   color: #fff;
@@ -1050,8 +1057,8 @@ section:not(.hero) {
 
 @media (max-width: 575px) {
   .newsletter-btn {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1440,7 +1447,8 @@ textarea.form-control {
   .section.vission .row {
     flex-direction: column-reverse;
   }
-  .vission .row,.mission .row {
+  .vission .row,
+  .mission .row {
     gap: 2rem;
   }
   .visson-mission,
@@ -1465,6 +1473,10 @@ textarea.form-control {
     font-size: 30px;
     line-height: 70px;
   }
+}
+
+section.feature .row .d-flex {
+  gap: 1.5rem;
 }
 .newsletter-form{
   border: 1px solid #e3e1e1;
