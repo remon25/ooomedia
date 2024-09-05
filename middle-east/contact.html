@@ -167,43 +167,44 @@
         </div>
         <div class="row contact-bg p-2 rounded mb-5">
           <div class="col-lg-7 mb-4 mb-lg-0 text-right">
-            <form action="#">
+            <form id="contact-form">
               <input
-                type="text"
-                class="form-control mb-3"
-                id="name"
-                name="name"
-                placeholder="اسمك"
+                  type="text"
+                  class="form-control mb-3"
+                  id="name"
+                  name="name"
+                  placeholder="الاسم"
+                  required
               />
               <input
-                type="email"
-                class="form-control mb-3"
-                id="mail"
-                name="mail"
-                placeholder="بريدك الإلكتروني"
+                  type="email"
+                  class="form-control mb-3"
+                  id="mail"
+                  name="mail"
+                  placeholder="بريدك الإلكتروني"
+                  required
               />
               <input
-                type="text"
-                class="form-control mb-3"
-                id="subject"
-                name="subject"
-                placeholder="الموضوع"
+                  type="text"
+                  class="form-control mb-3"
+                  id="subject"
+                  name="subject"
+                  placeholder="الموضوع"
+                  required
               />
               <textarea
-                name="message"
-                id="message"
-                class="form-control mb-3"
-                placeholder="رسالتك"
+                  name="message"
+                  id="message"
+                  class="form-control mb-3"
+                  placeholder="رسالتك"
+                  required
               ></textarea>
-              <button
-                type="submit"
-                value="send"
-                class="btn btn-secondary"
-                onclick="trackButtonClick()"
-              >
-                إرسال الرسالة
+              <button type="submit" class="btn btn-secondary">
+                  إرسال 
               </button>
-            </form>
+              <div id="response-message"></div>
+          </form>
+          
           </div>
           <div class="col-lg-5">
             <p class="mb-5 text-right">
@@ -371,6 +372,36 @@
     <!-- aos -->
     <script src="plugins/aos/aos.js"></script>
     <!-- Main Script -->
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          const formData = new FormData(this);
+
+          fetch("send-email.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              const responseMessage =
+                document.getElementById("response-message");
+              if (data.success) {
+                responseMessage.textContent = data.message;
+                responseMessage.style.color = "green";
+                this.reset(); 
+              } else {
+                responseMessage.textContent = data.message;
+                responseMessage.style.color = "red";
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
