@@ -1,11 +1,15 @@
 <?php
+header('Content-Type: application/json');
+
+$response = ['success' => false, 'message' => ''];
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['mail'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $to = 'Wesam.Mardini@ooomedia.de';
+    $to = 'remoomakram1@gmail.com';
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-type: text/html\r\n";
@@ -20,9 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "</body></html>";
 
     if (mail($to, $subject, $email_body, $headers)) {
-        echo "Email sent successfully.";
+        $response['success'] = true;
+        $response['message'] = 'Email sent successfully.';
     } else {
-        echo "Failed to send email.";
+        $response['message'] = 'Failed to send email.';
     }
 }
+
+echo json_encode($response);
 ?>
